@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&family=Sofia+Sans:wght@100&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,200;1,800&display=swap');
 
-:root{
+:root {
 
     --bg-black-900: #f2f2f2;
     --bg-black-100: #f2f2f2;
@@ -11,16 +10,16 @@
 
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
     font-family: 'poppins' sans-serif;
-    
+
 }
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -28,50 +27,97 @@ body{
 
 }
 
-::before, ::after
-{
+::before,
+::after {
     box-sizing: border-box;
 }
 
-.section{
+.section {
     background: var(--bg-black-900);
     min-height: 100vh;
-    display:block;
+    display: block;
     padding: 0 30px;
     opacity: 1;
 
 }
 
 .hidden {
+
     display: none !important;
 }
 
-.main-content{
+.main-content {
     padding-left: 270px;
 }
 
-.padd-15{
+.padd-15 {
     padding-left: 25px;
     padding-right: 35px;
     padding-top: 100px;
 
 }
 
-.container{
+.container {
     max-width: 1100px;
     width: 100%;
     background-color: var(--bg-black-900);
     margin: auto;
 
 }
-.row{
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-tittle {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.section-tittle h2 {
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.section-tittle h2::before {
+
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+
+.section-tittle h2::after {
+
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
 }
-.btn{
+
+.btn {
 
     font-size: 16px;
     font-weight: 500;
@@ -85,17 +131,17 @@ body{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
 
     transform: scale(1.15);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 
-.aside{
+.aside {
     width: 270px;
     background-color: var (--bg-black-100);
     position: fixed;
@@ -111,7 +157,7 @@ ul{
 
 }
 
-.aside .logo{
+.aside .logo {
 
     position: absolute;
     top: 50px;
@@ -119,7 +165,7 @@ ul{
     text-transform: capitalize;
 }
 
-.aside .logo a{
+.aside .logo a {
 
     color: var(--text-black-900);
     font-weight: 700;
@@ -130,14 +176,14 @@ ul{
     right: 30px;
 }
 
-.aside .logo a span{
+.aside .logo a span {
     font-family: 'Clicker Script', cursive;
     font-family: 40px;
-    
-    
+
+
 }
 
-.aside .logo a::before{
+.aside .logo a::before {
 
     content: '';
     position: absolute;
@@ -149,7 +195,7 @@ ul{
     left: 0;
 }
 
-.aside .logo a::after{
+.aside .logo a::after {
 
     content: '';
     position: absolute;
@@ -161,7 +207,7 @@ ul{
     right: 0;
 }
 
-.aside .nav-toggler{
+.aside .nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
@@ -171,14 +217,15 @@ ul{
     top: 20px;
     background: var(--bg-black-100);
     border-radius: 5px;
-    background-color:#fff;
+    background-color: #fff;
     display: none;
     align-items: center;
     justify-content: center;
-   
+
 
 }
-.aside .nav-toggler span{
+
+.aside .nav-toggler span {
 
     height: 2px;
     width: 18px;
@@ -188,7 +235,7 @@ ul{
 
 }
 
-.aside .nav-toggler span::before{
+.aside .nav-toggler span::before {
 
     content: '';
     height: 2px;
@@ -198,7 +245,8 @@ ul{
     top: -6px;
     left: 0;
 }
-.aside .nav-toggler span::after{
+
+.aside .nav-toggler span::after {
 
     content: '';
     height: 2px;
@@ -209,12 +257,12 @@ ul{
     left: 0;
 }
 
-.aside .nav{
+.aside .nav {
     margin-top: 50px;
 
 }
 
-.aside .nav li{
+.aside .nav li {
     margin-bottom: 20px;
     display: block;
 }
@@ -229,12 +277,12 @@ ul{
     padding: 5px 15px;
 }
 
-.aside .nav li a.active{
+.aside .nav li a.active {
     color: var(--skin-color);
 
 }
 
-.aside .nav li a i{
+.aside .nav li a i {
     margin-right: 15px;
 }
 
@@ -246,44 +294,44 @@ ul{
     color: var(--text-black-900);
 }
 
-.home .home-info{
+.home .home-info {
     flex: 00 60%;
     max-width: 60%;
 }
 
-.home-info p{
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700)
 }
 
-h3.hello{
+h3.hello {
     font-size: 28px;
     margin: 15px 0;
 }
 
-h3.hello span{
+h3.hello span {
 
-    font-family: 'Clicker Script' , cursive;
+    font-family: 'Clicker Script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 
 }
 
-h3 .my-profession{
+h3 .my-profession {
 
     font-size: 30px;
     margin: 15px 0;
 
 }
 
-.typing{
+.typing {
 
     color: var(--skin-color);
 }
 
-.home .home-img{
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
@@ -292,7 +340,7 @@ h3 .my-profession{
     top: -270px;
 }
 
-.home-img::after{
+.home-img::after {
     content: '';
     position: absolute;
     height: 80px;
@@ -304,9 +352,9 @@ h3 .my-profession{
 
 }
 
-.home-img::before{
+.home-img::before {
     content: '';
-    position:absolute;
+    position: absolute;
     height: 80px;
     width: 80px;
     border-top: 10px solid var(--skin-color);
@@ -316,6 +364,124 @@ h3 .my-profession{
 
 }
 
-.home .home-img img{
+.home .home-img img {
     height: 300px;
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700px;
+    color: var(--text-black-900);
+    padding-left: 20px;
+
+}
+
+.about .about-content .about-text p {
+    padding-left: 20px;
+}
+
+.about .about-content .about-text h3 span {
+
+    color: var(--skin-color);
+}
+
+.about .about-content .personal-info {
+
+    flex: 0 0 50%;
+    max-width: 60%;
+    margin-top: 40px;
+    padding-left: 35px;
+}
+
+.about .about-content .personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+}
+
+.about .about-content .personal-info .info-item p span {
+
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    padding-top: 10px
+}
+
+
+.about .about-content .skills .skill-item .progress {
+    background-color: #e8e8f1;
+    height: 7px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.about .about-content .skills .skill-item .progress-in {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+
+}
+
+.about .about-content .skills .skill-item .skill-percent {
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    font-weight: 300;
+    line-height: 40px;
+
+}
+
+.padd-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
 }
