@@ -774,13 +774,17 @@ h3 .my-profession {
     padding: 0 50px;
 }
 
-@media (max-width:1199px)
+@media (max-width:1320px)
 {
+    .body{
+        overflow: hidden;
+    }
     .aside{
         left: -270px;
     }
+   
     .main-content{
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     .about .about-content .personal-info .info-item p span{
@@ -793,13 +797,32 @@ h3 .my-profession {
         max-width: 100%;
         margin-top: 20%;
     }
+    .home .home-img{
+        display: none;
+       
+    }
+    
 }
 
 @media (max-width:991px){
 
+
+    .contact .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 85%;
+       
+
+    }
+    .contact .contact-form .col-12{
+        flex: 0 0 100%;
+        max-width: 85%;
+       
+
+    }
+
     .contact .contact-info-item{
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 85%;
+        max-width: 100%;
     }
     
     .portfolio .portfolio-item{
@@ -825,10 +848,15 @@ h3 .my-profession {
     .home .home-img{
         display: none;
     }
+    .portfolio .portfolio-item{
+        flex: 0 0 80%;
+        max-width: 100%;
+
+    }
 
 }
 
-@media (max-width:767px){
+@media (max-width:667px){
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
@@ -839,10 +867,24 @@ h3 .my-profession {
         max-width: 100%;
     }
     .about .about-content .education{
-        flex: 0 0 80%;
+        flex: 0 0 60%;
         max-width: 100%;
         margin-top: 20%;
-        margin-left: 0;
+        margin-left: 50px;
+    }
+    .contact .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 79%;
+       
+
     }
 
+    .contact .contact-form .col-12{
+        flex: 0 0 79%;
+       
+
+    }
+ 
+
+    
 }
