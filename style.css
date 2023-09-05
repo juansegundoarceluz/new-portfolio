@@ -842,6 +842,7 @@ h3 .my-profession {
         flex: 0 0 80%;
         max-width: 100%;
         margin-top: 20%;
+        margin-left: 0;
     }
 
 }
