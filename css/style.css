@@ -7,6 +7,21 @@
     --bg-black-50: #f2f2f2;
     --text-black-900: #302e4d;
     --text-black-700: #302e4d;
+     --text-black-350: #f6f6f7;
+    --text-black-400: #f2f2f2;
+    --text-black-850: #ffffff;
+
+}
+
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+    --text-black-350:#222222;
+    --text-black-400: #393939;
+    --text-black-850: #222222;
 
 }
 
@@ -148,7 +163,7 @@ ul {
 
 .aside {
     width: 270px;
-    background-color: var (--bg-black-100);
+    background-color: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
@@ -390,6 +405,7 @@ h3 .my-profession {
 
 .about .about-content .about-text p {
     padding-left: 20px;
+    color: var(--text-black-900);
 }
 
 .about .about-content .about-text h3 span {
@@ -491,6 +507,7 @@ h3 .my-profession {
     flex: 0 0 40%;
     margin-top: -350px;
     padding-left: 50px;
+    
 
 }
 
@@ -592,8 +609,8 @@ h3 .my-profession {
 }
 
 .service .service-item .service-item-inner{
-    background-color:#fff;
-    border: 1px solid #f2f2f2;
+    background-color: var(--text-black-350);
+    border: 1px solid var(--text-black-400);
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -689,7 +706,7 @@ h3 .my-profession {
 
 .contact-sub-title{
 
-    color:var(--text-black-900);
+    color: var(--text-black-900);
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
@@ -753,7 +770,7 @@ h3 .my-profession {
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background-color: #fff ;
+    background-color: var(--text-black-850);
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
     font-size: 18px;
@@ -781,9 +798,10 @@ h3 .my-profession {
     }
    
     .main-content{
-        padding-left: 0px;
-        max-width: 100%;
         flex: 0 0 100%;
+        padding-left: 0;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .about .about-content .personal-info .info-item p span{
@@ -804,11 +822,7 @@ h3 .my-profession {
 }
 
 @media(max-width:991px){
-    .main-content{
-        padding-left: 0px;
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
+   
 
 
     .contact .contact-form .col-6{
@@ -857,6 +871,12 @@ h3 .my-profession {
         max-width: 100%;
 
     }
+    .main-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+   
 
 }
 
